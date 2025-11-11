@@ -72,7 +72,7 @@ O **EcoWork Hub** é uma solução de IoT (Internet das Coisas) desenvolvida com
 
 ## 🏗️ Arquitetura Simplificada
 
-O fluxo de dados no sistema é o seguinte:
+### O fluxo de dados no sistema é o seguinte:
 
 ```mermaid
 graph LR;
