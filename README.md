@@ -3,12 +3,12 @@
 **Tagline:** _Monitoramento IoT para um home office mais verde, inteligente e produtivo._
 
 <p align="center">
-    <img src="[https://img.shields.io/badge/ESP32-purple?style=for-the-badge\&logo=espressif](https://img.shields.io/badge/ESP32-purple?style=for-the-badge&logo=espressif)" alt="Hardware ESP32" />
-    <img src="[https://img.shields.io/badge/MQTT-red?style=for-the-badge\&logo=mqtt](https://img.shields.io/badge/MQTT-red?style=for-the-badge&logo=mqtt)" alt="Protocolo MQTT" />
-    <img src="[https://img.shields.io/badge/Python-blue?style=for-the-badge\&logo=python](https://img.shields.io/badge/Python-blue?style=for-the-badge&logo=python)" alt="Backend Python" />
-    <img src="[https://img.shields.io/badge/Flask-black?style=for-the-badge\&logo=flask](https://img.shields.io/badge/Flask-black?style=for-the-badge&logo=flask)" alt="Framework Flask" />
-    <img src="[https://img.shields.io/badge/Socket.IO-grey?style=for-the-badge\&logo=socketdotio](https://www.google.com/search?q=https://img.shields.io/badge/Socket.IO-grey%3Fstyle%3Dfor-the-badge%26logo%3Dsocketdotio)" alt="Socket.IO" />
-    <img src="[https://img.shields.io/badge/Wokwi-cyan?style=for-the-badge](https://img.shields.io/badge/Wokwi-cyan?style=for-the-badge)" alt="Simulado no Wokwi" />
+    <img src="https://img.shields.io/badge/ESP32-purple?style=for-the-badge&logo=espressif" alt="Hardware ESP32" />
+    <img src="https://img.shields.io/badge/MQTT-red?style=for-the-badge&logo=mqtt" alt="Protocolo MQTT" />
+    <img src="https://img.shields.io/badge/Python-blue?style=for-the-badge&logo=python" alt="Backend Python" />
+    <img src="https://img.shields.io/badge/Flask-black?style=for-the-badge&logo=flask" alt="Framework Flask" />
+    <img src="https://img.shields.io/badge/Socket.IO-grey?style=for-the-badge&logo=socketdotio" alt="Socket.IO" />
+    <img src="https://img.shields.io/badge/Wokwi-cyan?style=for-the-badge" alt="Simulado no Wokwi" />
 </p>
 
 ---
@@ -74,20 +74,20 @@ O **EcoWork Hub** é uma solução de IoT (Internet das Coisas) desenvolvida com
 
 O fluxo de dados no sistema é o seguinte:
 
-
+```mermaid
 graph LR;
-    Sensores[🌡️💧💡👤 Sensores DHT/LDR/HC-SR04] -->|Leitura| ESP32[💻 ESP32 (c/ LCD e LEDs)];
-    ESP32 -->|Wi-Fi| BrokerMQTT[☁️ Broker MQTT (HiveMQ)];
-    BrokerMQTT -->|Subscrição| Backend[🐍 Backend Python/Flask];
-    Backend -->|Socket.IO| Dashboard[📊 Dashboard Web];
-    Dashboard -->|Visualização| Usuario[👩‍💻 Usuário];
+    A[🌡️💧💡👤 Sensores DHT/LDR/HC-SR04] -->|Leitura| B[💻 ESP32 (c/ LCD e LEDs)];
+    B -->|Wi-Fi| C[☁️ Broker MQTT (HiveMQ)];
+    C -->|Subscrição| D[🐍 Backend Python/Flask];
+    D -->|Socket.IO| E[📊 Dashboard Web];
+    E -->|Visualização| F[👩‍💻 Usuário];
 
-    style Sensores fill:#f9f,stroke:#333,stroke-width:2px;
-    style ESP32 fill:#ccf,stroke:#333,stroke-width:2px;
-    style BrokerMQTT fill:#fcf,stroke:#333,stroke-width:2px;
-    style Backend fill:#ff9,stroke:#333,stroke-width:2px;
-    style Dashboard fill:#9cf,stroke:#333,stroke-width:2px;
-
+    style A fill:#f9f,stroke:#333,stroke-width:2px;
+    style B fill:#ccf,stroke:#333,stroke-width:2px;
+    style C fill:#fcf,stroke:#333,stroke-width:2px;
+    style D fill:#ff9,stroke:#333,stroke-width:2px;
+    style E fill:#9cf,stroke:#333,stroke-width:2px;
+```
 
 ---
 
