@@ -76,19 +76,18 @@ O **EcoWork Hub** é uma solução de IoT (Internet das Coisas) desenvolvida com
 
 ```mermaid
 graph LR;
-    A[🌡️💧💡👤 Sensores DHT/LDR/HC-SR04] -->|Leitura| B[💻 ESP32 (c/ LCD e LEDs)];
-    B -->|Wi-Fi| C[☁️ Broker MQTT (HiveMQ)];
-    C -->|Subscrição| D[🐍 Backend Python/Flask];
-    D -->|Socket.IO| E[📊 Dashboard Web];
-    E -->|Visualização| F[👩‍💻 Usuário];
+    Sensores["🌡️💧💡👤 Sensores DHT/LDR/HC-SR04"] -->|Leitura| ESP32["💻 ESP32 (c/ LCD e LEDs)"];
+    ESP32 -->|Wi-Fi| BrokerMQTT["☁️ Broker MQTT (HiveMQ)"];
+    BrokerMQTT -->|Subscrição| Backend["🐍 Backend Python/Flask"];
+    Backend -->|Socket.IO| Dashboard["📊 Dashboard Web"];
+    Dashboard -->|Visualização| Usuario["👩‍💻 Usuário"];
 
-    style A fill:#f9f,stroke:#333,stroke-width:2px;
-    style B fill:#ccf,stroke:#333,stroke-width:2px;
-    style C fill:#fcf,stroke:#333,stroke-width:2px;
-    style D fill:#ff9,stroke:#333,stroke-width:2px;
-    style E fill:#9cf,stroke:#333,stroke-width:2px;
+    style Sensores fill:#f9f,stroke:#333,stroke-width:2px;
+    style ESP32 fill:#ccf,stroke:#333,stroke-width:2px;
+    style BrokerMQTT fill:#fcf,stroke:#333,stroke-width:2px;
+    style Backend fill:#ff9,stroke:#333,stroke-width:2px;
+    style Dashboard fill:#9cf,stroke:#333,stroke-width:2px;
 ```
-
 ---
 
 ## 🚀 Como Rodar o Projeto (Wokwi)
@@ -218,9 +217,13 @@ O projeto usa 3 tópicos distintos para organizar os dados:
 
 ---
 
-## 👨‍💻 Desenvolvedor
+## 👨‍💻 Desenvolvedores
 
-**Gabriel Akira Borges Kiyohara — FIAP (1ESPJ)**
+**RM:565191 Gabriel Akira Borges Kiyohara — FIAP (1ESPJ)**
+
+**RM:561820 Nome: Gustavo Santos — FIAP (1ESPJ)**
+
+**RM:556645 Nome: Mauro Carlos — FIAP (1ESPJ)**
 
 - 📧 E-mail: [gakirakiyohara@gmail.com](mailto:gakirakiyohara@gmail.com)
 - 🐙 GitHub: [Gakira06](https://github.com/Gakira06)
