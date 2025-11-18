@@ -224,7 +224,7 @@ O projeto usa 3 tópicos distintos para organizar os dados:
 
 Assista a uma demonstração completa do EcoWork Hub em funcionamento:
 
-[![Assista ao Vídeo](https://img.youtube.com/vi/SEU_ID_DO_VIDEO_AQUI/0.jpg)](https://youtu.be/atTLDuu9_rQ)
+[![Assista ao Vídeo](https://img.youtube.com/vi/atTLDuu9_rQ/0.jpg)](https://youtu.be/atTLDuu9_rQ)
 
 ---
 
