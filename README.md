@@ -9,6 +9,7 @@
     <img src="https://img.shields.io/badge/Flask-black?style=for-the-badge&logo=flask" alt="Framework Flask" />
     <img src="https://img.shields.io/badge/Socket.IO-grey?style=for-the-badge&logo=socketdotio" alt="Socket.IO" />
     <img src="https://img.shields.io/badge/Wokwi-cyan?style=for-the-badge" alt="Simulado no Wokwi" />
+    <img src="https://img.shields.io/badge/YouTube-red?style=for-the-badge&logo=youtube" alt="Vídeo no YouTube" />
 </p>
 
 ---
@@ -60,13 +61,13 @@ O **EcoWork Hub** é uma solução de IoT (Internet das Coisas) desenvolvida com
 
 ## 🛠️ Tecnologias Utilizadas
 
-| Categoria       | Tecnologia                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   | Descrição                                                      |
-| :-------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------- |
-**Hardware**    | <img src="https://img.shields.io/badge/ESP32-purple?logo=espressif" alt="ESP32"/> <img src="https://img.shields.io/badge/DHT22-blue" alt="DHT22"/> <img src="https://img.shields.io/badge/HC--SR04-grey" alt="HC-SR04"/> <img src="https://img.shields.io/badge/LDR-orange" alt="LDR"/> <img src="https://img.shields.io/badge/LCD%2016x02-green" alt="LCD 16x02"/> | Microcontrolador com Wi-Fi e sensores de ambiente/presença.    |
-**Firmware**    | <img src="https://img.shields.io/badge/Arduino%20C++-00979D?logo=arduino" alt="Arduino C++"/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           | Código embarcado no ESP32 para leitura, automação e envio.     |
-**Comunicação** | <img src="https://img.shields.io/badge/MQTT-red?logo=mqtt" alt="MQTT"/> <img src="https://img.shields.io/badge/Wi--Fi-blue" alt="Wi-Fi"/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                | Protocolo leve para dados IoT e conexão de rede sem fio.       |
-**Backend**     | <img src="https://img.shields.io/badge/Python-blue?logo=python" alt="Python"/> <img src="https://img.shields.io/badge/Flask-black?logo=flask" alt="Flask"/> <img src="https://img.shields.io/badge/Socket.IO-grey?logo=socketdotio" alt="Socket.IO"/> <img src="https://img.shields.io/badge/Paho--MQTT-yellow" alt="Paho-MQTT"/>                                                                                                                                                                                                                                                                                                                                                                               | Recebe dados via MQTT e os serve para o dashboard web.         |
-**Simulação**   | <img src="https://img.shields.io/badge/Wokwi-cyan" alt="Wokwi"/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               | Plataforma online para simular o circuito e o código do ESP32. |
+| Categoria       | Tecnologia                                                                                                                                                                                                                                                                                                                                                          | Descrição                                                      |
+| :-------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | :------------------------------------------------------------- |
+| **Hardware**    | <img src="https://img.shields.io/badge/ESP32-purple?logo=espressif" alt="ESP32"/> <img src="https://img.shields.io/badge/DHT22-blue" alt="DHT22"/> <img src="https://img.shields.io/badge/HC--SR04-grey" alt="HC-SR04"/> <img src="https://img.shields.io/badge/LDR-orange" alt="LDR"/> <img src="https://img.shields.io/badge/LCD%2016x02-green" alt="LCD 16x02"/> | Microcontrolador com Wi-Fi e sensores de ambiente/presença.    |
+| **Firmware**    | <img src="https://img.shields.io/badge/Arduino%20C++-00979D?logo=arduino" alt="Arduino C++"/>                                                                                                                                                                                                                                                                       | Código embarcado no ESP32 para leitura, automação e envio.     |
+| **Comunicação** | <img src="https://img.shields.io/badge/MQTT-red?logo=mqtt" alt="MQTT"/> <img src="https://img.shields.io/badge/Wi--Fi-blue" alt="Wi-Fi"/>                                                                                                                                                                                                                           | Protocolo leve para dados IoT e conexão de rede sem fio.       |
+| **Backend**     | <img src="https://img.shields.io/badge/Python-blue?logo=python" alt="Python"/> <img src="https://img.shields.io/badge/Flask-black?logo=flask" alt="Flask"/> <img src="https://img.shields.io/badge/Socket.IO-grey?logo=socketdotio" alt="Socket.IO"/> <img src="https://img.shields.io/badge/Paho--MQTT-yellow" alt="Paho-MQTT"/>                                   | Recebe dados via MQTT e os serve para o dashboard web.         |
+| **Simulação**   | <img src="https://img.shields.io/badge/Wokwi-cyan" alt="Wokwi"/>                                                                                                                                                                                                                                                                                                    | Plataforma online para simular o circuito e o código do ESP32. |
 
 ---
 
@@ -88,6 +89,7 @@ graph LR;
     style Backend fill:#ff9,stroke:#333,stroke-width:2px;
     style Dashboard fill:#9cf,stroke:#333,stroke-width:2px;
 ```
+
 ---
 
 ## 🚀 Como Rodar o Projeto (Wokwi)
@@ -214,6 +216,15 @@ O projeto usa 3 tópicos distintos para organizar os dados:
 - **LCD no Wokwi fica em branco?**
 
   - Verifique as conexões `SDA` e `SCL` (D21 e D22) e se o endereço no código (`LiquidCrystal_I2C lcd(0x27, 16, 2)`) está correto (0x27 é o padrão do Wokwi).
+
+---
+
+
+## 📺 Demonstração em Vídeo
+
+Assista a uma demonstração completa do EcoWork Hub em funcionamento:
+
+[![Assista ao Vídeo](https://img.youtube.com/vi/SEU_ID_DO_VIDEO_AQUI/0.jpg)](https://youtu.be/atTLDuu9_rQ)
 
 ---
 
