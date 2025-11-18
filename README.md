@@ -52,7 +52,7 @@ O **EcoWork Hub** é uma solução de IoT (Internet das Coisas) desenvolvida com
 ## 📸 Telas do Projeto
 
 - **Simulação no Wokwi:** Visualização do circuito completo em funcionamento.
-  <img src="./img/wokwi.png" alt="Simulação do Projeto no Wokwi" width="700"/>
+  <img src="./img/workwi.png" alt="Simulação do Projeto no Wokwi" width="700"/>
 - **Dashboard Web:** O dashboard recebendo dados em tempo real do Wokwi.
   <img src="./img/dashboard.png" alt="Dashboard Web com dados dos sensores" width="700"/>
 
